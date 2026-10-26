@@ -31,6 +31,24 @@ jobs:
       - name: Typecheck files
         run: yarn typecheck
 
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Check generated entity tables are up to date
+        run: |
+          yarn generate:entities
+          git diff --exit-code -- cpp/HtmlEntities.generated.h src/parser/entities.generated.ts
+
+      - name: Run unit tests (JS parser, renderer, C++ parser with sanitizers)
+        run: yarn test --maxWorkers=2
+
 
   build-library:
     runs-on: ubuntu-latest

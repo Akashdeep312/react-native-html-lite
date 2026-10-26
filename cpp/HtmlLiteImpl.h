@@ -6,12 +6,12 @@
 
 namespace facebook::react {
 
-class HtmlLiteImpl
-  : public NativeHtmlLiteCxxSpec<HtmlLiteImpl> {
+class HtmlLiteImpl : public NativeHtmlLiteCxxSpec<HtmlLiteImpl> {
 public:
   HtmlLiteImpl(std::shared_ptr<CallInvoker> jsInvoker);
 
-  double multiply(jsi::Runtime& rt, double a, double b);
+  // Returns an array of nodes shaped like `HtmlNode` in src/parser/types.ts.
+  jsi::Object parse(jsi::Runtime& rt, jsi::String html, double maxDepth);
 };
 
-}
+} // namespace facebook::react
