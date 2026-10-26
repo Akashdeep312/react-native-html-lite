@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => min_ios_version_supported }
-  s.source       = { :git => "https://github.com/your-username/react-native-html-lite.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/Akashdeep312/react-native-html-lite.git", :tag => "v#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}", "cpp/**/*.{hpp,cpp,c,h}"
   s.private_header_files = "ios/**/*.h"

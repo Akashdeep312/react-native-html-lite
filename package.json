@@ -1,6 +1,6 @@
 {
   "name": "react-native-html-lite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight native HTML renderer for React Native: a dependency-free C++ HTML parser exposed as a Turbo Module, rendered with Text and View",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -51,14 +51,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/react-native-html-lite.git"
+    "url": "git+https://github.com/Akashdeep312/react-native-html-lite.git"
   },
-  "author": "Aakash Deep Rajoria <author@example.com> (https://github.com/your-username)",
+  "author": "Aakash Deep Rajoria <author@example.com> (https://github.com/Akashdeep312)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/your-username/react-native-html-lite/issues"
+    "url": "https://github.com/Akashdeep312/react-native-html-lite/issues"
   },
-  "homepage": "https://github.com/your-username/react-native-html-lite#readme",
+  "homepage": "https://github.com/Akashdeep312/react-native-html-lite#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
